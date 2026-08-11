@@ -7,7 +7,7 @@ class TmdbConfigError extends Error {}
 function assertKey() {
   if (!API_KEY) {
     throw new TmdbConfigError(
-      'Falta la API key de TMDB. Cópiala en un archivo .env como VITE_TMDB_API_KEY (ver README.md).'
+      'Falta la API key de TMDB'
     );
   }
 }

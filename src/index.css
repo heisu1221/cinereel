@@ -1,5 +1,4 @@
 :root {
-  /* Dark Cinematic + Neon */
   --bg: #06070c;
   --surface: #10121c;
   --surface-raised: #171a28;
@@ -63,7 +62,7 @@ a:focus-visible {
   flex-direction: column;
 }
 
-/* ---------- Login ---------- */
+
 .login-screen {
   min-height: 100vh;
   display: flex;
@@ -173,7 +172,7 @@ a:focus-visible {
   line-height: 1.5;
 }
 
-/* ---------- Logo ---------- */
+
 .logo-btn {
   background: none;
   border: none;
@@ -201,7 +200,7 @@ a:focus-visible {
   display: inline-flex;
 }
 
-/* ---------- Navbar ---------- */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -309,7 +308,7 @@ a:focus-visible {
   color: var(--neon);
 }
 
-/* ---------- Cinematic Home ---------- */
+
 .cinematic-home {
   position: relative;
   min-height: 100vh;
@@ -447,7 +446,7 @@ a:focus-visible {
   transform: scale(0.97);
 }
 
-/* ---------- Main content / container ---------- */
+
 .main-content {
   flex: 1;
   width: 100%;
@@ -477,7 +476,7 @@ a:focus-visible {
   color: var(--ink);
 }
 
-/* ---------- Inline search bar (inside Browse) ---------- */
+
 .search-bar input {
   width: 100%;
   padding: 12px 18px;
@@ -494,7 +493,7 @@ a:focus-visible {
   box-shadow: 0 0 0 3px var(--neon-soft);
 }
 
-/* ---------- Grid & cards ---------- */
+
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -674,7 +673,7 @@ a:focus-visible {
   }
 }
 
-/* ---------- Booking modal ---------- */
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -910,7 +909,7 @@ a:focus-visible {
   flex: 2;
 }
 
-/* ---------- Reservations tab ---------- */
+
 .reservations-list {
   display: flex;
   flex-direction: column;
@@ -1040,7 +1039,7 @@ a:focus-visible {
   color: var(--neon);
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 1024px) {
   .cinematic-home__title {
     font-size: 46px;

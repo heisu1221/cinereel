@@ -1,5 +1,4 @@
-// Catálogo de dulcería y precio de entrada. Datos estáticos porque TMDB no
-// provee funciones, asientos ni precios reales — es simulado para el prototipo.
+
 export const CURRENCY = 'S/';
 export const SEAT_PRICE = 18;
 

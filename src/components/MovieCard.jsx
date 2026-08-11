@@ -55,6 +55,5 @@ function MovieCard({ movie, isFavorite, onToggleFavorite, onBook }) {
   );
 }
 
-// React.memo evita re-renders innecesarios de cada tarjeta cuando cambia el
-// estado de otras tarjetas en la grilla (criterio de optimización de rendimiento).
+
 export default memo(MovieCard);
