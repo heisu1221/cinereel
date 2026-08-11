@@ -63,7 +63,6 @@ export default function Login() {
         </form>
 
         <p className="login-hint">
-          Prototipo académico: cualquier usuario y contraseña no vacíos te dan acceso.
         </p>
       </div>
     </div>
