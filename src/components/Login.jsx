@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { useAuth } from '../context/AuthContext.jsx';
 import Logo from './Logo.jsx';
 
-// Nota: esta es una autenticación simulada (front-end only), suficiente para el
-// alcance del prototipo académico. No hay backend ni verificación de credenciales
-// reales; solo valida que se hayan completado ambos campos. Ver README.md.
+
 export default function Login() {
   const { login } = useAuth();
   const [username, setUsername] = useState('');
