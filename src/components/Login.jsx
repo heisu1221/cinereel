@@ -9,10 +9,10 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  function handleSubmit(e) {
+function handleSubmit(e) {
     e.preventDefault();
-    if (!username.trim() || !password.trim()) {
-      setError('Completa usuario y contraseña para continuar.');
+    if (username.trim() !== 'usuario' || password !== '12345') {
+      setError('Usuario o contraseña incorrectos.');
       return;
     }
     setError('');
