@@ -19,8 +19,6 @@ export default function CinematicHome({ onSearch }) {
 
   return (
     <section className="cinematic-home">
-      {/* Fondo: video en loop. Mientras no exista /public/videos/home-background.mp4,
-          se ve el degradado de respaldo definido en .cinematic-home__media (no se rompe nada). */}
       <div className="cinematic-home__media">
         <video
           className="cinematic-home__video"

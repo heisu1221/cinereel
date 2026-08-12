@@ -8,7 +8,6 @@ export default function BookingModal({ movie, onClose, onConfirm }) {
   const [seats, setSeats] = useState(1);
   const [foodQty, setFoodQty] = useState({});
 
-  // Cierra con Escape, como se espera de cualquier diálogo modal accesible.
   useEffect(() => {
     function handleKey(e) {
       if (e.key === 'Escape') onClose();

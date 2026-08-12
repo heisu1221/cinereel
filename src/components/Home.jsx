@@ -10,8 +10,6 @@ import MovieGrid from './MovieGrid.jsx';
 import ReservationsList from './ReservationsList.jsx';
 import BookingModal from './BookingModal.jsx';
 
-// view: 'home' (Home cinematográfico) | 'popular' (explorar/búsqueda) | 'favorites' | 'reservations'
-// El logo es el único acceso a 'home' — no existe un ítem de navegación "Inicio".
 export default function Home() {
   const { user, logout } = useAuth();
   const { favorites, isFavorite, toggleFavorite } = useFavorites();

@@ -1,4 +1,3 @@
-
 export const CURRENCY = 'S/';
 export const SEAT_PRICE = 18;
 

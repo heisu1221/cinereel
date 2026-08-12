@@ -32,17 +32,15 @@ export default function BrowseMovies({ query, onQueryChange, isFavorite, onToggl
   const [debouncedQuery, setDebouncedQuery] = useState(query);
   const [sectionsData, setSectionsData] = useState({});
   const [sectionsError, setSectionsError] = useState('');
-  const [searchResults, setSearchResults] = useState(null); // null = no búsqueda activa aún
-  const [searchStatus, setSearchStatus] = useState('idle'); // idle | loading | ready | error
+  const [searchResults, setSearchResults] = useState(null);
+  const [searchStatus, setSearchStatus] = useState('idle');
   const [searchError, setSearchError] = useState('');
 
-  // Debounce del buscador embebido en esta vista.
   useEffect(() => {
     const id = setTimeout(() => setDebouncedQuery(query), 400);
     return () => clearTimeout(id);
   }, [query]);
 
-  // Carga las 4 secciones reales de TMDB una sola vez.
   useEffect(() => {
     let cancelled = false;
     async function loadSections() {
@@ -63,7 +61,6 @@ export default function BrowseMovies({ query, onQueryChange, isFavorite, onToggl
     };
   }, []);
 
-  // Búsqueda (con los mismos datos reales de TMDB, misma lógica que ya existía).
   useEffect(() => {
     if (!debouncedQuery) {
       setSearchResults(null);
